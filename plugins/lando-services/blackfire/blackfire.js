@@ -56,7 +56,7 @@ module.exports = function(lando) {
         BLACKFIRE_SERVER_TOKEN: process.env.BLACKFIRE_SERVER_TOKEN
       },
       //volumes: ['data_' + name + ':' + configFiles.dataDir],
-      command: 'docker-entrypoint.sh /bin/bash'
+      command: 'docker-entrypoint.sh curl /bin/bash'
     };
 
     // Handle port forwarding
@@ -69,7 +69,7 @@ module.exports = function(lando) {
 
       // Else use the specified port
       else {
-        mariadb.ports = [config.portforward + ':3306'];
+        blackfire.ports = [config.portforward + ':3306'];
       }
 
     }
