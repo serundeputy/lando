@@ -47,6 +47,7 @@ module.exports = function(lando) {
       'redis',
       'ruby',
       'solr',
+      'tomcat',
       'varnish'
     ];
 
