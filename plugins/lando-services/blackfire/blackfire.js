@@ -102,7 +102,7 @@ module.exports = function(lando) {
   /**
    * Metadata about our service
    */
-  //var info = function(name, config) {
+  var info = function(name, config) {
 
   // Add in generic info
   var info = {};
@@ -126,10 +126,10 @@ module.exports = function(lando) {
   //    info.config  = config.config;
   //  }
 
-  //  // Return the collected info
-  //  return info;
+    // Return the collected info
+    return info;
 
-  //};
+  };
 
   return {
     info: info,
