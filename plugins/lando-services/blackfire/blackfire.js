@@ -56,7 +56,7 @@ module.exports = function(lando) {
         BLACKFIRE_SERVER_TOKEN: process.env.BLACKFIRE_SERVER_TOKEN
       },
       //volumes: ['data_' + name + ':' + configFiles.dataDir],
-      command: 'docker-entrypoint.sh curl /bin/bash'
+      command: 'blackfire-agent'
     };
 
     // Handle port forwarding
